@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(tags = "",
         features = { "src/main/resources/features/01.Login.feature",
-//                "src/main/resources/features/02.Message.feature",
+                "src/main/resources/features/02.Message.feature",
         "src/main/resources/features/03.Management.feature"},
 
         glue = "com.dika.deskcoll.step_definitions",

@@ -8,6 +8,7 @@ import com.dika.deskcoll.step_definitions.utils.Utils;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -38,11 +39,11 @@ public class Hooks {
         reports.flush();
     }
 
-//    @AfterAll
-//    public static void closeBrowser() {
-//        delay(3);
-//        DriverSingleton.closeObjectInstance();
-//    }
+    @AfterAll
+    public static void closeBrowser() {
+        delay(3);
+        DriverSingleton.closeObjectInstance();
+    }
 
     public static void delay(int detik) {
         try {
