@@ -10,7 +10,7 @@ public enum TestScenarios {
     T2("Enter Modul Message"),
     T3 ("Send Messege to Deskcoll"),
     T4 ("Send Messege to Supervisor "),
-    T5 ("Enter Modul Management"),
+    T5 ("Adding New User"),
     T6 ("Login With New User "),
     T7 ("Edit Data New User"),
     T8 ("Login User With Old Username And Password"),

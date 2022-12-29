@@ -1,6 +1,6 @@
 Feature: Add User login
 
-  Scenario: Enter Modul Management
+  Scenario: Adding New User
     When User go to Modul Management
     And User klik Add User
     And User Input Form

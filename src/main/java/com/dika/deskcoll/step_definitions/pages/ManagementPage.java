@@ -13,17 +13,6 @@ public class ManagementPage {
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
-
-    //*[@id="composeText"]
-//    public void ModulManagement() {
-//
-//        driver.findElement(By.xpath( "/html/body/div[8]/div[3]/div/button/span")).click();
-//        WebElement element = driver.findElement(By.xpath("//button[@id='54265_query']/span"));
-//        element.click();
-//    }
-//    public void AddUser() {
-//        driver.findElement(By.xpath("//button[@id='53741_query']/span")).click();
-//    }
     public void InputForm() {
         driver.findElement(By.id("dc_agent_editable-14-53175_text")).sendKeys("Saman Brembo");
         driver.findElement(By.id("dc_agent_editable-14-53176_text")).sendKeys("Saman Brembo");
