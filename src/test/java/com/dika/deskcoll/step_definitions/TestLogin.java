@@ -1,6 +1,5 @@
 package com.dika.deskcoll.step_definitions;
 
-import com.dika.deskcoll.step_definitions.drivers.DriverSingleton;
 import com.dika.deskcoll.step_definitions.pages.LoginPage;
 import com.dika.deskcoll.step_definitions.utils.Constants;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -8,7 +7,6 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import com.dika.deskcoll.step_definitions.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -57,6 +55,6 @@ public class TestLogin {
         Assert.assertEquals(loginPage.getTxtWelcome(), "Welcome to Deskcoll");
         extentTest.log(LogStatus.PASS, "TCC.DC.003 User valid credentials");
         loginPage.clickOk();
-        DriverSingleton.closeObjectInstance();
+//        DriverSingleton.closeObjectInstance();
     }
 }
